@@ -1,0 +1,203 @@
+/* CSS RESET */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* END OF CSS RESET by joshwcomeau */
+
+/* ========================================= */
+
+/* GENERAL STYLING */
+
+body {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 60%;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ========================================= */
+
+/* LAYOUT */
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 18em;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.button:hover {
+    box-shadow: 3px 3px #fff;
+}
+
+header,
+footer {
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+header,
+footer,
+h1,
+p {
+    z-index: 2;
+
+}
+
+.button {
+    font-size: 1.2rem;
+    padding: .3em 1.4em;
+    border: 1px solid #F5504C;
+    border-radius: 50px;
+}
+
+main {
+    font-family: 'Space Mono', monospace;
+    min-height: 86vh;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-image: url("../img/kerry-zeng-y2h3O5bVDqc-unsplash.jpg");
+}
+
+.background-overlay {
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    max-width: 30%;
+}
+
+.intro.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about h1 {
+    margin-top: -1.4em;
+}
+
+.about p {
+    margin-top: 4em;
+    max-width: 70%;
+}
+
+section a {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+span {
+    color: #F5504C;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    border-top: 1px solid #fff;
+}
