@@ -6,14 +6,14 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*
     2. Remove default margin
   */
 * {
-    margin: 0;
+  margin: 0;
 }
 
 /*
@@ -21,7 +21,7 @@
   */
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 /*
@@ -30,8 +30,8 @@ body {
     5. Improve text rendering
   */
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -42,8 +42,8 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 /*
@@ -53,7 +53,7 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /*
@@ -66,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /*
@@ -74,7 +74,7 @@ h6 {
   */
 #root,
 #__next {
-    isolation: isolate;
+  isolation: isolate;
 }
 
 /* END OF CSS RESET by joshwcomeau */
@@ -84,23 +84,19 @@ h6 {
 /* GENERAL STYLING */
 
 body {
-    color: #fff;
-    font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-}
-
-img {
-    width: 60%;
+  list-style: none;
+  padding: 0;
 }
 
 a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ========================================= */
@@ -108,96 +104,90 @@ a {
 /* LAYOUT */
 
 header {
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1em 18em;
-    align-items: center;
-    border-bottom: 1px solid #fff;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: .4em 0;
+  border-bottom: 1px solid #fff;
 }
 
-.button:hover {
-    box-shadow: 3px 3px #fff;
-}
-
-header,
-footer {
-    backdrop-filter: blur(6px);
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-header,
-footer,
-h1,
-p {
-    z-index: 2;
-
-}
-
-.button {
-    font-size: 1.2rem;
-    padding: .3em 1.4em;
-    border: 1px solid #F5504C;
-    border-radius: 50px;
+header img {
+  width: 40px;
 }
 
 main {
-    font-family: 'Space Mono', monospace;
-    min-height: 86vh;
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-    background-image: url("../img/kerry-zeng-y2h3O5bVDqc-unsplash.jpg");
+  min-height: 100%;
+  font-family: 'Space Mono', monospace;
 }
 
-.background-overlay {
-    top: 0;
-    width: 100%;
-    min-height: 100%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
+section {
+  display: flex;
+  justify-content: center;
+  line-height: 1.2;
 }
 
-.intro {
-    display: flex;
-    align-items: center;
-    max-width: 30%;
+section h1 {
+  border: 1px solid #fff;
+  margin: 3.2em 7em 0;
+  padding: .3em;
+  font-size: 4rem;
 }
 
-.intro.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+
+.button {
+  padding: .5em 2em;
+  border: 1px solid #fff;
 }
 
-.about h1 {
-    margin-top: -1.4em;
-}
-
-.about p {
-    margin-top: 4em;
-    max-width: 70%;
+.button:hover {
+  color: #f45d4a;
 }
 
 section a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-h1 {
-    font-size: 5rem;
-}
-
-p {
-    font-family: 'Inter', sans-serif;
-}
-
-span {
-    color: #F5504C;
+section a:hover {
+  color: #f45d4a;
 }
 
 footer {
-    text-align: center;
-    padding: 1em;
-    border-top: 1px solid #fff;
+  text-align: center;
+  padding: 1em;
+  border-top: 1px solid #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+header,
+h1,
+footer,
+.about {
+  backdrop-filter: blur(100px);
+}
+
+.myname {
+  font-family: 'Space Mono', monospace;
+}
+
+.about {
+  width: 50%;
+  flex-direction: column;
+  margin: 1em auto;
+  padding: 1em;
+  border: 1px solid #fff;
+}
+
+h2 {
+  margin-bottom: .7em;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4;
 }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/isthis.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Space+Mono:wght@700&display=swap"
         rel="stylesheet">
 </head>
 
@@ -20,38 +20,45 @@
         </div>
         <nav>
             <ul>
-                <li><a href="about.html" class="button">About</a></li>
+                <li><a href="https://github.com/latgit/" class="button" target="_blank">GitHub</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="intro">
-            <h1>CSS is <span>Fun</span>.</h1>
+    <main class="vanta-js">
+        <section>
+            <h1>I don't have an idea to write this heading. Do you have one? Please <a href="#" target="_blank">tell
+                    me</a>.</h1>
         </section>
-        <div class="background-overlay vanta-js"></div>
+        <section class="about">
+            <h2>About</h2>
+            <p>Latgit (my-github-username), stands for “<strong>Lat</strong>ihan <strong>Git</strong>” in Indonesian,
+                which means (Practice Git). Why is
+                this account only temporary? See <a href="#" target="_blank" rel="noopener noreferrer">here</a>.</p>
+        </section>
+        <section class="about">
+        </section>
+        <section class="about">
+        </section>
     </main>
     <footer>
-        <p>Made with ❤️ by <a href="https://github.com/latgit" target="_blank" rel="noopener noreferrer">@latgit</a></p>
+        <p>Made with ❤️ by <span class="myname">Rezky Wahyudi M.</span> </p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
     <script>
 
-        if (window.VANTA) window.VANTA.BIRDS({
+        if (window.VANTA) window.VANTA.HALO({
             el: ".vanta-js",
             mouseControls: true,
             touchControls: true,
             gyroControls: true,
-            minHeight: 100.00,
-            minWidth: 100.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color2: 0x0,
-            colorMode: "lerpGradient",
-            backgroundAlpha: 0.00,
-            wingSpan: 5.00,
-            separation: 30.00,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            amplitudeFactor: 50.00,
+            xOffset: 0.01,
+            yOffset: 0.1,
+            size: 0.6
         })
 
     </script>
