@@ -84,65 +84,62 @@ ul {
 }
 
 a {
+  color: inherit;
   display: inline-block;
   text-decoration: none;
-  color: inherit;
 }
 
 /* ========================================= */
 
 /* LAYOUT */
 
+header,
+h1,
+.about,
+footer {
+  backdrop-filter: blur(100px);
+}
+
 header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #fff;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   padding: .4em 0;
-  border-bottom: 1px solid #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 header img {
   width: 40px;
-}
-
-main {
-  padding: 5em 0;
-  display: flex;
-  justify-content: space-evenly;
-  min-height: 100%;
-  font-family: 'Space Mono', monospace;
-}
-
-section {
-  display: flex;
-  width: 40%;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 .9em;
-  line-height: 1.2;
-}
-
-h1 {
-  padding: .5em;
-  border: 1px solid #fff;
-  font-size: 4rem;
-}
-
-.about {
-  padding: 2em;
-  border: 1px solid #fff;
+  height: auto;
 }
 
 .button {
-  padding: .5em 2em;
   border: 1px solid #fff;
+  padding: .5em 2em;
 }
 
 .button:hover {
   color: #f45d4a;
+}
+
+main {
+  display: flex;
+  font-family: 'Space Mono', monospace;
+  justify-content: center;
+  min-height: 100%;
+  padding: 5em 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+  padding: 0 .9em;
+  width: 40%;
 }
 
 section a {
@@ -153,25 +150,10 @@ section a:hover {
   color: #f45d4a;
 }
 
-footer {
-  text-align: center;
-  padding: 1em;
-  border-top: 1px solid #fff;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  z-index: 1;
-}
-
-header,
-h1,
-.about,
-footer {
-  backdrop-filter: blur(100px);
-}
-
-.myname {
-  font-family: 'Space Mono', monospace;
+h1 {
+  border: 1px solid #fff;
+  font-size: 4rem;
+  padding: .5em;
 }
 
 h2 {
@@ -183,28 +165,41 @@ p {
   line-height: 1.4;
 }
 
+.about {
+  border: 1px solid #fff;
+  padding: 2em;
+}
+
+footer {
+  border-top: 1px solid #fff;
+  bottom: 0;
+  padding: 1em;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.myname {
+  font-family: 'Space Mono', monospace;
+}
+
 /* ========================================= */
 
 /* Responsive */
 
-@media (max-width: 480px) {
+@media (max-width: 720px) {
   h1 {
     font-size: 1.2em;
+    padding: .9em;
   }
 
   section {
     width: 70%;
+    margin: 0 4em;
+  }
+
+  .about {
+    padding: 1.3em;
   }
 }
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2em;
-  }
-
-  section {
-    width: 50%;
-  }
-}
-
-/* Responsive */
