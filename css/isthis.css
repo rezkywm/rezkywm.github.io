@@ -38,34 +38,16 @@ body {
     6. Improve media defaults
   */
 img,
-picture,
-video,
-canvas,
-svg {
+picture {
   display: block;
   max-width: 100%;
-}
-
-/*
-    7. Remove built-in form typography styles
-  */
-input,
-button,
-textarea,
-select {
-  font: inherit;
 }
 
 /*
     8. Avoid text overflows
   */
 p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   overflow-wrap: break-word;
 }
 
@@ -75,6 +57,7 @@ h6 {
 
 body {
   color: #fff;
+  background-color: #000;
   font-family: 'Inter', sans-serif;
 }
 
@@ -94,23 +77,18 @@ a:hover {
 
 }
 
-.wrapper {
-  padding: 0 24em;
-  min-height: 100%;
-}
-
 /* ========================================= */
 
 /* LAYOUT */
 
 header {
-  padding-top: 1em;
+  padding: 1em 24em;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
+  left: 0;
   width: 100%;
-  z-index: 2;
 }
 
 .text-logo {
@@ -124,11 +102,19 @@ header {
 
 main {
   display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 24em;
+}
+
+section {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-height: 85vh;
+  gap: 24px;
+  padding: 2em;
   font-family: 'Space Mono', monospace;
   line-height: 1.6;
+  backdrop-filter: blur(80px) saturate(170%);
 }
 
 main a {
@@ -137,32 +123,25 @@ main a {
 
 h1 {
   font-size: 2.2rem;
-  padding: .7em;
 }
 
 .about {
+  font-family: 'Inter', sans-serif;
   font-size: .9rem;
-  padding: 2em;
+  line-height: 1.7;
 }
 
-h1,
-.about,
+section,
 .button {
   border: 1px solid #fff;
-}
-
-h2 {
-  margin-bottom: .5em;
 }
 
 footer {
   padding: 1em;
   position: fixed;
-  text-align: center;
   width: 100%;
   bottom: 0;
   left: 0;
-  z-index: 1;
 }
 
 footer p {
@@ -178,27 +157,26 @@ footer p {
   font-weight: 700;
 }
 
-h1,
-.about {
-  backdrop-filter: blur(80px) saturate(170%);
-}
-
 /* ========================================= */
 
 /* Responsive */
 
-@media (max-width: 720px) {
+@media (max-width: 961px) {
 
-  .wrapper {
-    padding: .1em 2em;
+  header {
+    padding: .7em 2em;
+  }
+
+  main {
+    padding: 0 2em;
   }
 
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .about {
-    font-size: .7rem;
+    font-size: .8rem;
   }
 
 }
