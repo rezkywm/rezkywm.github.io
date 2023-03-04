@@ -56,8 +56,8 @@ h1 {
 /* GENERAL STYLING */
 
 body {
-  color: #fff;
   background-color: #000;
+  color: #fff;
   font-family: 'Inter', sans-serif;
 }
 
@@ -74,7 +74,6 @@ a {
 
 a:hover {
   color: #f45d4a;
-
 }
 
 /* ========================================= */
@@ -82,12 +81,12 @@ a:hover {
 /* LAYOUT */
 
 header {
-  padding: 1em 24em;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  position: fixed;
   left: 0;
+  padding: 1em 24em;
+  position: fixed;
   width: 100%;
   z-index: 2;
 }
@@ -102,20 +101,21 @@ header {
 }
 
 main {
-  display: flex;
   align-items: center;
+  display: flex;
   min-height: 100vh;
+  min-height: 100svh;
   padding: 0 24em;
 }
 
 section {
+  backdrop-filter: blur(80px) saturate(170%);
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 2em;
   font-family: 'Space Mono', monospace;
-  line-height: 1.6;
-  backdrop-filter: blur(80px) saturate(170%);
+  gap: 24px;
+  line-height: 1.5;
+  padding: 2em;
 }
 
 main a {
@@ -138,19 +138,19 @@ section,
 }
 
 footer {
+  bottom: 0;
+  left: 0;
   padding: 1em;
   position: fixed;
   width: 100%;
-  bottom: 0;
-  left: 0;
 }
 
 footer p {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 8px;
+  display: flex;
   font-family: 'Inter', sans-serif;
+  gap: 8px;
+  justify-content: center;
 }
 
 .myname {
