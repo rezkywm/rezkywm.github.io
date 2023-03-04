@@ -89,99 +89,98 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #f45d4a;
+
+}
+
+.wrapper {
+  padding: 0 24em;
+  min-height: 100%;
+}
+
 /* ========================================= */
 
 /* LAYOUT */
 
-header,
-h1,
-.about,
-footer {
-  backdrop-filter: blur(100px);
-}
-
 header {
+  padding-top: 1em;
   align-items: center;
-  border-bottom: 1px solid #fff;
   display: flex;
-  justify-content: space-evenly;
-  padding: .4em 0;
-  position: fixed;
+  justify-content: space-between;
+  position: relative;
   width: 100%;
   z-index: 2;
 }
 
-header img {
-  width: 40px;
-  height: auto;
+.text-logo {
+  font-size: 1.8rem;
+  font-weight: 900;
 }
 
 .button {
-  border: 1px solid #fff;
   padding: .5em 2em;
-}
-
-.button:hover {
-  color: #f45d4a;
 }
 
 main {
   display: flex;
-  font-family: 'Space Mono', monospace;
-  justify-content: center;
-  min-height: 100%;
-  padding: 5em 0;
-}
-
-section {
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 1.2;
-  padding: 0 .9em;
-  width: 40%;
+  min-height: 85vh;
+  font-family: 'Space Mono', monospace;
+  line-height: 1.6;
 }
 
-section a {
+main a {
   text-decoration: underline;
 }
 
-section a:hover {
-  color: #f45d4a;
-}
-
 h1 {
-  border: 1px solid #fff;
-  font-size: 4rem;
-  padding: .5em;
-}
-
-h2 {
-  margin-bottom: .7em;
-}
-
-p {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.4;
+  font-size: 2.2rem;
+  padding: .7em;
 }
 
 .about {
-  border: 1px solid #fff;
+  font-size: .9rem;
   padding: 2em;
 }
 
+h1,
+.about,
+.button {
+  border: 1px solid #fff;
+}
+
+h2 {
+  margin-bottom: .5em;
+}
+
 footer {
-  border-top: 1px solid #fff;
-  bottom: 0;
   padding: 1em;
   position: fixed;
   text-align: center;
   width: 100%;
+  bottom: 0;
+  left: 0;
   z-index: 1;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
 }
 
 .myname {
   font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+h1,
+.about {
+  backdrop-filter: blur(80px) saturate(170%);
 }
 
 /* ========================================= */
@@ -189,17 +188,17 @@ footer {
 /* Responsive */
 
 @media (max-width: 720px) {
-  h1 {
-    font-size: 1.2em;
-    padding: .9em;
+
+  .wrapper {
+    padding: .1em 2em;
   }
 
-  section {
-    width: 70%;
-    margin: 0 4em;
+  h1 {
+    font-size: 1.6rem;
   }
 
   .about {
-    padding: 1.3em;
+    font-size: .7rem;
   }
+
 }

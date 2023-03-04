@@ -10,24 +10,23 @@
     <link rel="stylesheet" href="css/isthis.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Space+Mono:wght@700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="img/profile-picture.png">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
 </head>
 
-<body>
+<body class="vanta-js">
 
-    <header>
-        <div class="github-picture-profile"><img src="img/profile-picture.png" alt="a toy standing behind orange cloud">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="https://github.com/latgit/" class="button" target="_blank">GitHub</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="vanta-js">
-        <section>
+    <div class="wrapper bg">
+        <header>
+            <div class="text-logo"><a href="https://github.com/latgit/latgit.github.io" target="_blank">PEW.</a></div>
+            <nav>
+                <ul>
+                    <li><a href="https://github.com/latgit/" class="button" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
             <h1>I don't have an idea to write this heading. Do you have one? Please <a href="https://bit.ly/3BlS71b"
                     target="_blank">tell
                     me</a>.</h1>
@@ -36,17 +35,23 @@
                 <p>Latgit (my-github-username), stands for “<strong>Lat</strong>ihan <strong>Git</strong>” in
                     Indonesian,
                     which means (Practice Git). Why is
-                    this account only temporary? See <a href="https://youtu.be/xm3YgoEiEDc" target="_blank"
-                        rel="noopener noreferrer">here</a>.</p>
+                    this account only temporary? See <a href="https://youtu.be/xm3YgoEiEDc" target="_blank">here</a>.
+                </p>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>Made with ❤️ by <span class="myname">Rezky Wahyudi M.</span> </p>
-    </footer>
+        </main>
+        <footer>
+            <p>Made with <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.webp"
+                        type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.gif" alt="❤" width="20"
+                        height="20">
+                </picture> by <span class="myname">Rezky Wahyudi M.</span> </p>
+        </footer>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
     <script>
 
         if (window.VANTA) window.VANTA.HALO({
@@ -56,11 +61,28 @@
             gyroControls: true,
             minHeight: 200.00,
             minWidth: 200.00,
-            amplitudeFactor: 80.00,
+            amplitudeFactor: 30.00,
             xOffset: 0.01,
             yOffset: 0.01,
             size: 0.6,
-            scaleMobile: 1.0,
+            scaleMobile: 1.00,
+            backgroundColor: 0x0
+        })
+
+        if (window.VANTA) window.VANTA.DOTS({
+            el: ".bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xffffff,
+            size: 3.00,
+            spacing: 100.00,
+            showLines: false,
+            backgroundAlpha: 0.00
         })
 
     </script>
