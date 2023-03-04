@@ -39,7 +39,8 @@ body {
   */
 img,
 picture,
-svg {
+svg,
+canvas {
   display: block;
   max-width: 100%;
 }
@@ -57,9 +58,15 @@ h1 {
 /* GENERAL STYLING */
 
 body {
+  position: relative;
   background-color: #000;
   color: #fff;
   font-family: 'Inter', sans-serif;
+}
+
+canvas {
+  position: absolute;
+  min-height: 100%;
 }
 
 a {
