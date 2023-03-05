@@ -61,7 +61,7 @@ body {
   background-color: #000;
   color: #fff;
   font-family: 'Inter', sans-serif;
-  background-image: url("../img/daniel-menakhovsky-zqyk7S_FoGA-unsplash.jpg");
+  background-image: url("../img/pexels-instawalli-176851.webp");
   background-size: cover;
 }
 
@@ -141,7 +141,7 @@ section {
 
 .about {
   font-family: 'Inter', sans-serif;
-  font-size: .9rem;
+  font-size: 1rem;
   line-height: 1.7;
 }
 
@@ -172,10 +172,6 @@ footer p {
 
 @media (max-width: 1200px) {
 
-  body {
-    background-image: url("../img/daniel-menakhovsky-zqyk7S_FoGA-unsplash-mob.jpg");
-  }
-
   header {
     padding: 1em 16em;
   }
@@ -192,10 +188,6 @@ footer p {
 
 @media (max-width: 900px) {
 
-  body {
-    background-image: url("../img/daniel-menakhovsky-zqyk7S_FoGA-unsplash-mob.jpg");
-  }
-
   header {
     padding: 1em 2em;
   }
@@ -209,7 +201,31 @@ footer p {
   }
 
   .about {
-    font-size: .8rem;
+    font-size: .9rem;
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  header {
+    padding: 1em 1em;
+  }
+
+  main {
+    padding: 0 1em;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .about {
+    font-size: .7rem;
+  }
+
+  footer p {
+    flex-wrap: wrap;
   }
 
 }
