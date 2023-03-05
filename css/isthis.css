@@ -181,7 +181,7 @@ footer p {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
 
 }
@@ -197,7 +197,7 @@ footer p {
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .about {
@@ -211,13 +211,21 @@ footer p {
   header {
     padding: 1em 1em;
   }
-
+  
+  header a {
+    width: 24px;
+  }
+  
+  .text-logo {
+    font-size: 1rem;
+  }
+  
   main {
     padding: 0 1em;
   }
 
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .about {
