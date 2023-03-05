@@ -168,28 +168,20 @@ footer p {
 
 /* ========================================= */
 
-/* Responsive */
+/* Mobile */
 
-@media (max-width: 1200px) {
-
-  header {
-    padding: 1em 16em;
-  }
-
-  main {
-    padding: 0 16em;
-  }
-
-  h1 {
-    font-size: 2.8rem;
-  }
-
-}
-
-@media (max-width: 900px) {
+@media (max-width: 480px) {
 
   header {
     padding: 1em 2em;
+  }
+
+  header a {
+    width: 32px;
+  }
+
+  .text-logo {
+    font-size: 1.4rem;
   }
 
   main {
@@ -197,43 +189,11 @@ footer p {
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 1.68rem;
   }
 
   .about {
     font-size: .8rem;
-  }
-
-}
-
-@media (max-width: 360px) {
-
-  header {
-    padding: 1em 1em;
-  }
-  
-  header a {
-    width: 24px;
-  }
-  
-  .text-logo {
-    font-size: 1rem;
-  }
-  
-  main {
-    padding: 0 1em;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  .about {
-    font-size: .75rem;
-  }
-
-  footer p {
-    flex-wrap: wrap;
   }
 
 }
