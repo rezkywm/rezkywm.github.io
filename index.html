@@ -53,15 +53,26 @@
         </footer>
     </div>
 
-    <script src="https://unpkg.com/webgl-fluid@0.3"></script>
+    <script src="https://unpkg.com/webgl-fluid@0.0.4/dist/webgl-fluid.umd.min.js"></script>
     <script>
+        const { default: fluid } = window['webgl-fluid'];
         const canvas = document.querySelector('canvas');
-        const options = { TRANSPARENT: true, BLOOM: true, BLOOM_INTENSITY: 0.1, BLOOM_THRESHOLD: 1, SUNRAYS: false, DENSITY_DISSIPATION: 1.3, VELOCITY_DISSIPATION: 0.48, PRESSURE: 0.93, CURL: 41, SPLAT_RADIUS: 0.31 };
-        WebGLFluid(canvas, options);
+        const wrapper = document.querySelector('.wrapper');
 
-        document.querySelector('.wrapper').addEventListener('mousemove', e => {
-            canvas.dispatchEvent(new e.constructor(e.type, e));
+        fluid(canvas, {
+          TRANSPARENT: true,
+          BLOOM: true,
+          BLOOM_INTENSITY: 0.1,
+          BLOOM_THRESHOLD: 1,
+          SUNRAYS: false,
+          DENSITY_DISSIPATION: 1.3,
+          VELOCITY_DISSIPATION: 0.48,
+          PRESSURE: 0.93,
+          CURL: 41,
+          SPLAT_RADIUS: 0.31,
         });
+
+        wrapper.addEventListener('mousemove', (event) => canvas.dispatchEvent(new MouseEvent(event.type, event)));
     </script>
 
 </body>
