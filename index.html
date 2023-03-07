@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Author: Rezky Wahyudi M.">
     <title>@latgit</title>
-    <link rel="stylesheet" href="css/isthis.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload"
@@ -17,6 +17,9 @@
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=JetBrains+Mono:wght@800&display=swap">
     </noscript>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://unpkg.com">
     <link rel="icon" type="image/x-icon" href="img/icon.png">
 </head>
 
@@ -50,8 +53,8 @@
             </main>
             <footer>
                 <p>Made with <picture>
-                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.gif" alt="❤" width="20"
-                            height="20">
+                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.gif" alt="❤" width="16"
+                            height="16">
                     </picture> by <span class="myname">Rezky Wahyudi M.</span> </p>
             </footer>
         </div>
@@ -59,7 +62,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-    <script async>
+    <script src="https://unpkg.com/webgl-fluid@0.0.4/dist/webgl-fluid.umd.min.js"></script>
+    <script defer>
         if (window.VANTA) window.VANTA.NET({
             el: "body",
             mouseControls: true,
@@ -76,8 +80,7 @@
             spacing: 30.00
         })
     </script>
-    <script src="https://unpkg.com/webgl-fluid@0.0.4/dist/webgl-fluid.umd.min.js"></script>
-    <script async>
+    <script defer>
         const { default: fluid } = window['webgl-fluid'];
         const canvas = document.querySelector('canvas');
         const wrapper = document.querySelector('.wrapper');
