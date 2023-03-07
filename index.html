@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div id="vanta-js"><canvas id="webgl-fluid"></canvas>
+    <div class="upper"><canvas id="webgl-fluid"></canvas>
         <div class="wrapper">
             <header>
                 <div class="text-logo"><a href="https://github.com/latgit/latgit.github.io" target="_blank">PEW</a>
@@ -58,17 +58,17 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script async>
         if (window.VANTA) window.VANTA.NET({
-            el: "#vanta-js",
+            el: "body",
             mouseControls: true,
             touchControls: true,
-            gyroControls: true,
-            minHeight: 200.00,
-            minWidth: 200.00,
+            gyroControls: false,
+            minHeight: 100.00,
+            minWidth: 100.00,
             scale: 1.00,
             scaleMobile: 1.00,
             color: 0xffffff,
             backgroundColor: 0x0,
-            points: 20.00,
+            points: 10.00,
             maxDistance: 0,
             spacing: 30.00
         })
@@ -80,8 +80,6 @@
         const wrapper = document.querySelector('.wrapper');
 
         fluid(canvas, {
-            BLOOM_INTENSITY: 0.1,
-            BLOOM_THRESHOLD: 1,
             BLOOM: false,
             CURL: 41,
             DENSITY_DISSIPATION: 1.3,
