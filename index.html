@@ -6,38 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Author: Rezky Wahyudi M.">
-    <title>@latgit</title>
+    <title>Personal Experimental Website | @latgit</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=JetBrains+Mono:wght@800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@800&display=swap"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=JetBrains+Mono:wght@800&display=swap">
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@800&display=swap">
     </noscript>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://unpkg.com">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="icon" type="image/svg+xml" href="favicon/pew-dark.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/svg+xml" href="favicon/pew-light.svg" media="(prefers-color-scheme: light)">
 </head>
 
 <body>
     <div class="upper"><canvas id="webgl-fluid"></canvas>
         <div class="wrapper">
             <header>
-                <div class="text-logo"><a href="https://github.com/latgit/latgit.github.io" target="_blank">PEW</a>
-                </div>
-                <a href="https://github.com/latgit" target="_blank" aria-label="Latgit GitHub Profile"><svg
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
+                <a href="https://github.com/latgit/latgit.github.io" target="_blank" aria-label="PEW GitHub Repository">
+                    <svg width="75" height="32" viewBox="0 0 75 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M32 10.6667C32 15.2673 29.0874 19.1877 25.0055 20.6844V0.648925C29.0874 2.14564 32 6.06601 32 10.6667Z" />
+                        <path
+                            d="M21.3333 10.6667V0C15.4423 0 10.6667 4.77563 10.6667 10.6667C4.77563 10.6667 5.41979e-07 15.4423 0 21.3333L10.6667 21.3333V10.6667H21.3333Z" />
+                        <path d="M14.3388 21.3333V31.3511C18.4207 29.8544 21.3333 25.934 21.3333 21.3333H14.3388Z" />
+                        <path d="M10.6667 25.0055H0.648927C2.14564 29.0874 6.06601 32 10.6667 32L10.6667 25.0055Z" />
+                        <path
+                            d="M21.3333 16C21.3333 14.986 20.5113 14.1639 19.4973 14.1639H14.1639V17.8361H19.4973C20.5113 17.8361 21.3333 17.014 21.3333 16V16Z" />
+                        <path
+                            d="M39.0114 22V10.3636H43.6023C44.4848 10.3636 45.2367 10.5322 45.858 10.8693C46.4792 11.2027 46.9527 11.6667 47.2784 12.2614C47.608 12.8523 47.7727 13.5341 47.7727 14.3068C47.7727 15.0795 47.6061 15.7614 47.2727 16.3523C46.9394 16.9432 46.4564 17.4034 45.8239 17.733C45.1951 18.0625 44.4337 18.2273 43.5398 18.2273H40.6136V16.2557H43.142C43.6155 16.2557 44.0057 16.1742 44.3125 16.0114C44.6231 15.8447 44.8542 15.6155 45.0057 15.3239C45.161 15.0284 45.2386 14.6894 45.2386 14.3068C45.2386 13.9205 45.161 13.5833 45.0057 13.2955C44.8542 13.0038 44.6231 12.7784 44.3125 12.6193C44.0019 12.4564 43.608 12.375 43.1307 12.375H41.4716V22H39.0114ZM49.3707 22V10.3636H57.2116V12.392H51.831V15.1648H56.8082V17.1932H51.831V19.9716H57.2344V22H49.3707ZM61.7869 22L58.4574 10.3636H61.1449L63.071 18.4489H63.1676L65.2926 10.3636H67.5938L69.7131 18.4659H69.8153L71.7415 10.3636H74.429L71.0994 22H68.7017L66.4858 14.392H66.3949L64.1847 22H61.7869Z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/latgit" target="_blank" aria-label="Latgit GitHub Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path
                             d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z" />
-                    </svg></a>
+                    </svg>
+                </a>
             </header>
             <main>
                 <section>

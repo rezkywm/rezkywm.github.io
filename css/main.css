@@ -102,11 +102,6 @@ header {
   z-index: 2;
 }
 
-.text-logo {
-  font-size: 1.8rem;
-  font-weight: 900;
-}
-
 main {
   align-items: center;
   display: flex;
@@ -117,6 +112,7 @@ main {
 
 section {
   backdrop-filter: blur(60px) saturate(200%) brightness(70%);
+  border-radius: 30px;
   border: 1px solid #fff;
   display: flex;
   flex-direction: column;
@@ -135,12 +131,11 @@ h1,
 }
 
 h1 {
-  font-size: 3.3rem;
+  font-size: 2.7rem;
 }
 
 .about {
-  font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 footer {
@@ -167,20 +162,12 @@ footer p {
     padding: 1em 2em;
   }
 
-  header a {
-    width: 32px;
-  }
-
-  .text-logo {
-    font-size: 1.4rem;
-  }
-
   main {
     padding: 0 2em;
   }
 
   h1 {
-    font-size: 1.68rem;
+    font-size: 1.35rem;
   }
 
   .about {
