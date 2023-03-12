@@ -1,58 +1,3 @@
-/* CSS RESET */
-
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/*
-    2. Remove default margin
-  */
-* {
-  margin: 0;
-}
-
-/*
-    3. Allow percentage-based heights in the application
-  */
-html,
-body {
-  height: 100%;
-}
-
-/*
-    Typographic tweaks!
-    4. Add accessible line-height
-    5. Improve text rendering
-  */
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-/*
-    6. Improve media defaults
-  */
-img,
-picture,
-svg,
-canvas {
-  display: block;
-  max-width: 100%;
-}
-
-/*
-    8. Avoid text overflows
-  */
-p,
-h1 {
-  overflow-wrap: break-word;
-}
-
 /* ========================================= */
 
 /* GENERAL STYLING */
@@ -62,12 +7,6 @@ body {
   color: #fff;
   font-family: 'Inter', sans-serif;
   position: fixed;
-}
-
-#webgl-fluid {
-  height: 100%;
-  position: absolute;
-  width: 100%;
 }
 
 a {
@@ -92,14 +31,22 @@ svg:hover {
 
 /* LAYOUT */
 
+#webgl-fluid {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.header-fixed {
+  position: fixed;
+  width: 100%;
+}
+
 header {
   align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 1em 24em;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
 }
 
 main {
@@ -140,24 +87,24 @@ h1 {
 
 footer {
   bottom: 0;
-  padding: 1em;
   position: fixed;
   width: 100%;
 }
 
-footer p {
+.copy {
   align-items: center;
   display: flex;
   gap: 8px;
   justify-content: center;
+  padding: 1em;
 }
 
 /* ========================================= */
 
-/* Mobile */
+/* Responsive */
 
-@media (max-width: 480px) {
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   header {
     padding: 1em 2em;
   }
@@ -167,11 +114,68 @@ footer p {
   }
 
   h1 {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
 
   .about {
-    font-size: .8rem;
+    font-size: .75rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  header {
+    padding: 1em 4em;
   }
 
+  main {
+    padding: 0 4em;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 1em 8em;
+  }
+
+  main {
+    padding: 0 8em;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header {
+    padding: 1em 12em;
+  }
+
+  main {
+    padding: 0 12em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  header {
+    padding: 1em 16em;
+  }
+
+  main {
+    padding: 0 16em;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* ========================================= */
