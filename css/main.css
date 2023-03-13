@@ -46,7 +46,6 @@ header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 1em 24em;
 }
 
 main {
@@ -54,7 +53,6 @@ main {
   display: flex;
   min-height: 100vh;
   min-height: 100svh;
-  padding: 0 24em;
 }
 
 section {
@@ -75,10 +73,6 @@ main a {
 h1,
 .myname {
   font-family: 'JetBrains Mono', monospace;
-}
-
-h1 {
-  font-size: 2.7rem;
 }
 
 .about {
@@ -114,7 +108,7 @@ footer {
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .about {
