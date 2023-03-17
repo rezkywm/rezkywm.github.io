@@ -40,6 +40,7 @@ svg:hover {
 .header-fixed {
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 header {
@@ -50,6 +51,7 @@ header {
 
 main {
   align-items: center;
+  justify-content: center;
   display: flex;
   min-height: 100vh;
   min-height: 100svh;
