@@ -7,7 +7,7 @@
 body {
   background-color: #000;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Archivo', sans-serif;
   position: fixed;
 }
 
@@ -18,7 +18,9 @@ a {
 }
 
 a:hover {
-  color: #f45d4a;
+  color: #fafa37;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 svg {
@@ -26,7 +28,7 @@ svg {
 }
 
 svg:hover {
-  fill: #f45d4a;
+  fill: #fafa37;
 }
 
 /* ========================================= */
@@ -61,22 +63,20 @@ main {
 
 section {
   backdrop-filter: blur(60px) saturate(200%) brightness(70%);
-  border-radius: 30px;
   border: 1px solid #fff;
   display: flex;
   flex-direction: column;
-  gap: 24px;
   line-height: 1.5;
   padding: 2em;
 }
 
-main a {
-  text-decoration: underline;
+h1 {
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
-h1,
-.myname {
-  font-family: 'JetBrains Mono', monospace;
+main a {
+  text-decoration: underline;
 }
 
 .about {
@@ -95,6 +95,14 @@ footer {
   gap: 8px;
   justify-content: center;
   padding: 1em;
+}
+
+.myname {
+  font-weight: 600;
+}
+
+strong {
+  font-weight: 800;
 }
 
 /* ========================================= */
