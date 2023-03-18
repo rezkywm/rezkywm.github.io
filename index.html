@@ -22,8 +22,8 @@
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/svg+xml" href="favicon/pd.svg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/svg+xml" href="favicon/pl.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="favicon/PDM.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/svg+xml" href="favicon/PLM.svg" media="(prefers-color-scheme: light)">
 </head>
 
 <body>
@@ -33,13 +33,15 @@
                 <header>
                     <a href="https://github.com/latgit/latgit.github.io" target="_blank"
                         aria-label="PEW GitHub Repository">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="85" height="32" viewBox="0 0 85 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 0H22V10H10V0Z" />
                             <path d="M10 10V21H0V10H10Z" />
                             <path d="M26 0H32V21H26V0Z" />
                             <path d="M9.96721 25.0055H0V32H9.96721V25.0055Z" />
                             <path d="M22 21H14V29.0273H22V21Z" />
                             <path d="M14 14H22V17H14V14Z" />
+                            <path
+                                d="M48.216 21V10.024H53.928C54.7173 10.024 55.3733 10.1733 55.896 10.472C56.4293 10.76 56.8293 11.1707 57.096 11.704C57.3733 12.2267 57.512 12.8507 57.512 13.576C57.512 14.3013 57.368 14.936 57.08 15.48C56.8027 16.0133 56.392 16.4293 55.848 16.728C55.304 17.0267 54.6373 17.176 53.848 17.176H50.6V21H48.216ZM50.6 15.224H53.528C54.0293 15.224 54.4133 15.08 54.68 14.792C54.9573 14.504 55.096 14.104 55.096 13.592C55.096 13.24 55.0373 12.9467 54.92 12.712C54.8027 12.4773 54.6267 12.296 54.392 12.168C54.168 12.04 53.88 11.976 53.528 11.976H50.6V15.224ZM59.1066 21V10.024H67.8746V11.976H61.5066V14.424H67.1386V16.36H61.5066V19.032H67.9706V21H59.1066ZM71.8365 21L68.9565 10.024H71.4845L73.0845 16.568C73.1165 16.664 73.1485 16.808 73.1805 17C73.2125 17.1813 73.2445 17.3733 73.2765 17.576C73.3085 17.7787 73.3352 17.96 73.3565 18.12H73.4365C73.4578 18.0027 73.4738 17.8693 73.4845 17.72C73.5058 17.5707 73.5272 17.4267 73.5485 17.288C73.5805 17.1387 73.6072 17 73.6285 16.872C73.6605 16.744 73.6818 16.6427 73.6925 16.568L75.1805 10.024H78.0285L79.5485 16.568C79.5805 16.6747 79.6125 16.8187 79.6445 17C79.6765 17.1813 79.7085 17.3733 79.7405 17.576C79.7725 17.7787 79.7992 17.96 79.8205 18.12H79.9005C79.9218 18.0027 79.9432 17.8747 79.9645 17.736C79.9965 17.5973 80.0232 17.4587 80.0445 17.32C80.0765 17.1707 80.1085 17.032 80.1405 16.904C80.1725 16.776 80.1992 16.664 80.2205 16.568L81.8045 10.024H84.0925L81.1965 21H78.4765L76.8605 14.248C76.8285 14.0987 76.7912 13.928 76.7485 13.736C76.7165 13.5333 76.6845 13.336 76.6525 13.144C76.6205 12.952 76.5938 12.7813 76.5725 12.632H76.5085C76.4872 12.7813 76.4605 12.9573 76.4285 13.16C76.4072 13.3627 76.3752 13.56 76.3325 13.752C76.3005 13.944 76.2685 14.1093 76.2365 14.248L74.6365 21H71.8365Z" />
                         </svg>
                     </a>
                     <a href="https://github.com/latgit" target="_blank" aria-label="Latgit GitHub Profile">
@@ -49,7 +51,7 @@
             </div>
             <main>
                 <section>
-                    <h1>Need more fun ? <a href="https://bit.ly/tl1m3" target="_blank">Let's Go!</a></h1>
+                    <h1>Press "Space" to trigger.<a href="https://bit.ly/ntstfd" target="_blank">Not satisfied?</a></h1>
                     <div class="about">
                         <p>Latgit stands for “<strong>Lat</strong>ihan <strong>Git</strong>” in
                             Indonesian,
@@ -94,7 +96,7 @@
         const wrapper = document.querySelector('.wrapper');
 
         fluid(canvas, {
-            BLOOM: true,
+            BLOOM: false,
             CURL: 41,
             DENSITY_DISSIPATION: 1.3,
             IMMEDIATE: false,

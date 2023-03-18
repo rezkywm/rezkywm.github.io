@@ -15,6 +15,7 @@ a {
   color: inherit;
   display: inline-block;
   text-decoration: none;
+  font-weight: 600;
 }
 
 a:hover {
@@ -64,8 +65,6 @@ main {
 section {
   backdrop-filter: blur(60px) saturate(200%) brightness(70%);
   border: 1px solid #fff;
-  display: flex;
-  flex-direction: column;
   line-height: 1.5;
   padding: 2em;
 }
@@ -77,6 +76,7 @@ h1 {
 
 main a {
   text-decoration: underline;
+  font-weight: 900;
 }
 
 .about {
