@@ -237,11 +237,11 @@ strong {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   header {
-    padding: 1em 16em;
+    padding: 1em 24em;
   }
 
   main {
-    padding: 0 16em;
+    padding: 0 24em;
   }
 
   h1 {
