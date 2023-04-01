@@ -84,8 +84,9 @@ a {
   font-weight: 600;
 }
 
-a:hover {
-  color: #fafa37;
+a:hover,
+a:active {
+  color: #0ddd4c;
   text-decoration: underline;
   text-underline-offset: 6px;
 }
@@ -94,8 +95,9 @@ svg {
   fill: #fff;
 }
 
-svg:hover {
-  fill: #fafa37;
+svg:hover,
+svg:active {
+  fill: #0ddd4c;
 }
 
 /* ========================================= */
@@ -136,14 +138,19 @@ main {
 section {
   backdrop-filter: blur(60px) saturate(200%) brightness(70%);
   border: 1px solid #fff;
-  padding: 2em;
+  padding: 1.2em;
 }
 
 h1 {
+  max-width: 24ch;
   text-transform: uppercase;
   font-weight: 900;
   margin-bottom: 1em;
-  font-size: 4rem;
+  font-size: 1.2rem;
+}
+
+section p {
+  max-width: 75ch;
 }
 
 main a {
@@ -187,10 +194,6 @@ strong {
   main {
     padding: 0 2em;
   }
-
-  h1 {
-    font-size: 1.2rem;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -219,7 +222,7 @@ strong {
   }
 
   h1 {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
 }
 
@@ -242,10 +245,6 @@ strong {
 
   main {
     padding: 0 24em;
-  }
-
-  h1 {
-    font-size: 3rem;
   }
 }
 
