@@ -194,6 +194,10 @@ strong {
   main {
     padding: 0 2em;
   }
+
+  section p {
+    max-width: 30ch;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
