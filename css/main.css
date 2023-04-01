@@ -81,7 +81,6 @@ a {
   color: inherit;
   display: inline-block;
   text-decoration: none;
-  font-weight: 600;
 }
 
 a:hover,
@@ -187,8 +186,16 @@ strong {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  svg {
+    width: 64px;
+  }
+
   header {
     padding: 1em 2em;
+  }
+
+  header a{
+    font-size: .875rem;
   }
 
   main {
