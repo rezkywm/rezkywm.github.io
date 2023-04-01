@@ -136,6 +136,7 @@ main {
 
 section {
   backdrop-filter: blur(60px) saturate(200%) brightness(70%);
+  -webkit-backdrop-filter: blur(60px) saturate(200%) brightness(70%);
   border: 1px solid #fff;
   padding: 1.2em;
 }
@@ -194,7 +195,7 @@ strong {
     padding: 1em 2em;
   }
 
-  header a{
+  header a {
     font-size: .875rem;
   }
 
