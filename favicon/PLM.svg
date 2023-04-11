@@ -1,8 +1,6 @@
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M10 0H22V10H10V0Z" fill="black"/>
-<path d="M10 10V21H0V10H10Z" fill="black"/>
-<path d="M26 0H32V21H26V0Z" fill="black"/>
-<path d="M9.96721 25.0055H0V32H9.96721V25.0055Z" fill="black"/>
-<path d="M22 21H14V29.0273H22V21Z" fill="black"/>
-<path d="M14 14H22V17H14V14Z" fill="black"/>
+    <path d="M21.9999 0V9.99996H9.99996V21.9999H0.00012207V0H21.9999Z" fill="black" />
+    <path d="M31.9999 0H25.9999V21.9999H13.9999V31.9999H32L31.9999 0Z" fill="black" />
+    <path d="M9.96713 25.9999H0V31.9999H9.96713V25.9999Z" fill="black" />
+    <path d="M21.9999 17.9999H13.9999V13.9999H21.9999V17.9999Z" fill="black" />
 </svg>

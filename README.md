@@ -1,3 +1,3 @@
-# Personal Experimental Website (PEW) 🧪
+# Personal Experimental Website (PEW) ⚗️
 
-PEW is a trial & error process, to make website looks good and interactive.
+PEW just basic static site that offer a suprisess.
