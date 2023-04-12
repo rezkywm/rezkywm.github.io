@@ -86,8 +86,6 @@ a {
 a:hover,
 a:active {
   color: #bd5af7;
-  text-decoration: underline;
-  text-underline-offset: 6px;
 }
 
 svg {
