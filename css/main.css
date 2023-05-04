@@ -86,6 +86,7 @@ a {
 a:hover,
 a:active {
   color: #bd5af7;
+  transition: 150ms ease-in;
 }
 
 svg {
