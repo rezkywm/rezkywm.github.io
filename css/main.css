@@ -108,40 +108,36 @@ section {
   overflow-y: scroll;
 }
 
-/* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #333333;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
+  background: hsl(278, 91%, 40%);
+}
+
+::-webkit-scrollbar-thumb:hover {
   background: #bd5af7;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-#close{
+#close {
   position: absolute;
   right: 8px;
   top: 8px;
   cursor: pointer;
 }
 
-#close:hover{
+#close:hover {
   background-color: #bd5af7;
   transition: 150ms ease-in;
 
 }
 
-section::after{
+section::after {
   content: "";
   background-color: #fff;
   position: absolute;
