@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  line-height: 1.5;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -43,7 +43,7 @@ h6 {
 body {
   background-color: #000;
   color: #fff;
-  font-family: 'Archivo', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 a {
@@ -99,14 +99,59 @@ main {
 }
 
 section {
-  backdrop-filter: blur(32px) saturate(200%) brightness(70%);
+  backdrop-filter: blur(32px) saturate(200%) brightness(25%);
   -webkit-backdrop-filter: blur(32px) saturate(200%) brightness(70%);
   border: 1px solid #fff;
-  padding: 1.2em;
+  padding: 7em 3em 6em;
+  position: relative;
+  height: 47vh;
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bd5af7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#close{
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+#close:hover{
+  background-color: #bd5af7;
+  transition: 150ms ease-in;
+
+}
+
+section::after{
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 64px;
+  left: 0;
 }
 
 h1 {
-  max-width: 24ch;
   text-transform: uppercase;
   font-weight: 900;
   margin-bottom: 1em;
