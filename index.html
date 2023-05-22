@@ -9,11 +9,12 @@
     <title>Personal Experimental Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&display=swap"
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&display=swap">
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap">
     </noscript>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -45,9 +46,15 @@
                     </header>
                 </div>
                 <main>
-                    <section>
+                    <section id="menu">
+                        <svg id="close" onclick="remove()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            width="48" height="48">
+                            <path
+                                d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z"
+                                fill="rgba(255,255,255,1)"></path>
+                        </svg>
                         <h1><span class="headline">Are you bored?🥱</span> Find a surprise🎉 in this site🌐<a
-                                href="https://bit.ly/ntstfd">Not
+                                href="https://bit.ly/ntstfd"> Not
                                 satisfied?🤔</a></h1>
                         <h2>About</h2>
                         <p><a href="https://github.com/latgit" target="_blank">Latgit</a> stands for “<b>Lat</b>ihan
@@ -71,6 +78,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="https://unpkg.com/webgl-fluid@0.0.4/dist/webgl-fluid.umd.min.js"></script>
+    <script>
+        const menu = document.getElementById("menu");
+
+        function remove() {
+            menu.style.display = "none";
+        }
+    </script>
     <script>
         if (window.VANTA) window.VANTA.NET({
             el: ".bg",
