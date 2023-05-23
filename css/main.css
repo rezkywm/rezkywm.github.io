@@ -112,6 +112,10 @@ section {
   border: 1px solid #fff;
 }
 
+.text {
+  font-weight: 400;
+}
+
 .title {
   display: flex;
   justify-content: flex-start;
@@ -163,7 +167,7 @@ section {
 
 h1 {
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 800;
   margin-bottom: 1em;
   font-size: var(--fz);
 }
@@ -173,13 +177,9 @@ h2 {
   font-size: calc(var(--fz) / 2);
 }
 
-section p {
-  max-width: 75ch;
-}
-
 main a {
   text-decoration: underline;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 footer {
