@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -108,8 +108,41 @@ section {
 #menu {
   position: relative;
   backdrop-filter: blur(32px) saturate(200%) brightness(25%);
-  -webkit-backdrop-filter: blur(32px) saturate(200%) brightness(70%);
+  -webkit-backdrop-filter: blur(32px) saturate(200%) brightness(25%);
   border: 1px solid #fff;
+  touch-action: none;
+  user-select: none;
+  transform: translate(0px, 0px);
+  overflow: hidden;
+  z-index: 1;
+}
+
+body.swal2-shown>[aria-hidden="true"] {
+  transition: 0.1s filter;
+  filter: blur(8px) saturate(200%) brightness(45%);
+}
+
+.swal2-container.swal2-center>.swal2-popup {
+  color: #fff !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  border: 1px solid #fff !important;
+}
+
+.swal2-styled.swal2-confirm {
+  border-radius: 0 !important;
+  font-family: inherit !important;
+  background-color: hsl(278, 91%, 58%) !important;
+}
+
+.swal2-styled.swal2-confirm:hover {
+  border-radius: 0 !important;
+  font-family: inherit !important;
+  background-color: hsl(278, 91%, 62%) !important;
+}
+
+.swal2-styled.swal2-confirm:focus {
+  box-shadow: none !important;
 }
 
 .text {
@@ -130,15 +163,15 @@ section {
 }
 
 ::-webkit-scrollbar-track {
-  background: #333333;
+  background-color: #333333;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(278, 91%, 40%);
+  background-color: hsl(278, 91%, 40%);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #bd5af7;
+  background-color: #bd5af7;
 }
 
 #close {
@@ -174,7 +207,7 @@ h1 {
 
 h2 {
   margin-bottom: .3em;
-  font-size: calc(var(--fz) / 2);
+  font-size: calc(var(--fz) / 2) !important;
 }
 
 main a {
@@ -203,7 +236,7 @@ footer p {
 
 .headline {
   font-weight: 100;
-  background-color: blueviolet;
+  background-color: hsl(278, 91%, 58%);
 }
 
 p a {
@@ -232,7 +265,7 @@ p a {
   }
 
   h2 {
-    font-size: calc(var(--fz) / 1.5);
+    font-size: calc(var(--fz) / 1.5) !important;
   }
 
   main {
